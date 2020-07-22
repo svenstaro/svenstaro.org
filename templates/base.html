@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>svenstaro's place</title>
+    <link rel="shortcut icon" href="https://github.githubassets.com/images/icons/emoji/unicode/1f980.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a href="/">Posts</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="/">Projects</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="/">Talks</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="/">About</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="/">CV</a>
+                    </div>
+                </div>
+            </nav>
+            {% block content %} {% endblock %}
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <a class="has-text-dark" href="https://github.com/svenstaro">
+                <span class="icon is-large">
+                    <i class="fab fa-2x fa-github"></i>
+                </span>
+            </a>
+            <a class="has-text-dark" href="https://gitlab.com/svenstaro">
+                <span class="icon is-large">
+                    <i class="fab fa-2x fa-gitlab"></i>
+                </span>
+            </a>
+            <a class="has-text-dark" href="http://stackexchange.com/users/54083/svenstaro">
+                <span class="icon is-large">
+                    <i class="fab fa-2x fa-stack-overflow"></i>
+                </span>
+            </a>
+            <a class="has-text-dark" href="/atom.xml">
+                <span class="icon is-large">
+                    <i class="fas fa-2x fa-rss"></i>
+                </span>
+            </a>
+            <p>© 2015 - {{ now() | date(format="%Y") }} Sven-Hendrik Haase</p>
+        </div>
+    </footer>
+</body>
+
+</html>

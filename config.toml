@@ -1,0 +1,10 @@
+base_url = "httsp://svenstaro.org"
+title = "svenstaro's place"
+description = "Tales of DevOps, terminals, and crabs"
+default_language = "en"
+compile_sass = true
+highlight_code = true
+build_search_index = true
+generate_feed = true
+
+[extra]
